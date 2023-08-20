@@ -1,0 +1,41 @@
+/* Bootstrap's icon CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* basic margin and padding for site */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+nav {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+    font-weight: bolder;
+}
+
+#head-icon {
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.nav-link {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
