@@ -8,17 +8,23 @@
     background-color: #ffffff;
 }
 
+:root {
+    --link-color: rgb(0 0 0 / 70%);
+}
+
 nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-brand {
     font-weight: bolder;
+    color: var(--link-color);
 }
 
 #head-icon {
     font-size: 1.5rem;
     padding-right: 0.5rem;
+    color: var(--link-color);
 }
 
 .navbar-toggler{
@@ -39,3 +45,12 @@ nav {
     box-shadow: none;
 }
 
+#footer-menu li a { 
+    color: var(--link-color);
+    transition: color 0.15 ease-in-out;
+}
+
+
+#footer-menu li a:hover {
+    color: #292828;
+}
