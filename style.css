@@ -17,7 +17,7 @@ nav {
 }
 
 .navbar-brand {
-    font-weight: 500;
+    font-weight: 450;
     font-size: 18px;
     color: var(--link-color);
 }
@@ -33,6 +33,7 @@ nav {
 }
 
 .nav-link {
+    color: var(--link-color);
     font-weight: 400;
     font-size: 16px;
 }
@@ -50,10 +51,4 @@ nav {
     color: var(--link-color);
     font-weight: 400;
     font-size: 16px;
-    transition: color 0.15 ease-in-out;
-}
-
-
-#footer-menu li a:hover {
-    color: #292828;
 }
