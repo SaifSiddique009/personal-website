@@ -1,12 +1,41 @@
-.p-text {
-    font-size: 17px;
+:root {
+    --link-color: #2c3a48;
+    --link-hover-color: #4e657b;
 }
+
+.p-text {
+    font-size: 18px;
+}
+
+/* Blog post styling */
 
 .btn-me {
     box-shadow: 0 0.1px 2px rgba(0, 0, 0, 0.4);
-}
-
-
-.btn-me {
     background-color: #fff;
 }
+
+.col-align-2 {
+    text-align: end;
+    font-weight: 400;
+    color: #4f5861;
+    font-size: 18px;
+}
+
+.col-align-1 a {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.table>:not(caption)>*>*{
+    padding-left: 0;
+}
+
+.blog-link {
+    color: var(--link-color); 
+    text-decoration: none;
+  }
+  
+.blog-link:hover {
+    color: var(--link-color);
+    border-bottom : 2px solid var(--link-hover-color); 
+  }
