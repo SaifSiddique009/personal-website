@@ -5,6 +5,7 @@
 
 .p-text {
     font-size: 18px;
+    text-align: justify;
 }
 
 /* Blog post styling */
@@ -81,3 +82,34 @@
     letter-spacing: 4px;
 }
 
+/* about me page style */
+.name {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.icon {
+    color:rgba(0, 0, 0, 0.6);
+    font-size: 1.5em;
+}
+
+.icon:hover {
+    color:rgba(0, 0, 0, 0.8);
+}
+
+.btn-about {
+    font-size: 1em;
+    font-weight: 400;
+    cursor: default !important;
+}
+
+.btn-about:hover {
+    background-color: #212529;
+}
+
+.img-about {
+    max-width: 40%;
+}
