@@ -10,10 +10,11 @@
 
 ### How Many Pages Are In The Website:
 <p>The website consists of four pages such as:</p>
-- Home
-- About
-- Projects
-- Hobies (For the example purpose i used Photography)
+
+- HOME
+- ABOUT
+- PROJECTS
+- HOBBY
 
 ### Brief Intro of Each Pages:
 #### Home Page:
