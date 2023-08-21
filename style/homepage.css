@@ -114,3 +114,14 @@
     max-width: 35%;
     padding-top: 2.5em;
 }
+
+.img-gal {
+    object-fit: contain;
+}
+
+.border {
+    padding-bottom: .2em;
+    border: none !important;
+    border-bottom : 5px solid var(--link-hover-color) !important; 
+}
+
