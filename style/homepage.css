@@ -111,8 +111,9 @@
 }
 
 .img-about {
-    max-width: 35%;
-    padding-top: 2.5em;
+    width: 32%;
+    height: auto;
+    padding-top: 2em;
 }
 
 
@@ -121,6 +122,11 @@
     height: 300px;
 }
 
+.card:hover {
+    cursor:pointer;
+    background-color: #eee;
+    transition: all 0.5s ease;
+}
 .border {
     padding-bottom: .2em;
     border: none !important;
