@@ -23,10 +23,9 @@
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<i class="bi-text-right" style="font-size: 1.5rem;"></i>
 				</button>
-				<div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasNavbar">
 					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						<button type="button" class="ms-auto btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 					</div>
 					<div class="offcanvas-body">
 						<ul class="navbar-nav justify-content-end flex-grow-1">
@@ -66,7 +65,35 @@
 						<p class="p-text my-4">In my portfolio, you'll find a selection of my work, including projects I've completed for clients, as well as personal projects I've worked on. I hope you enjoy taking a look at my work and learning more about my skills and experience. <p>
 							
 						<p class="p-text my-4">I'm always looking for new challenges, so if you have a project in mind, please don't hesitate to reach out.</p>
-						<button type="button" class="btn btn-dark mt-2">Contact Me</button>
+						<button type="button" class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Me</button>
+
+						<!-- Contact Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="mb-3">
+												<label for="recipient-name" class="col-form-label">Recipient:</label>
+												<input type="text" class="form-control" id="recipient-name">
+											</div>
+											<div class="mb-3">
+												<label for="message-text" class="col-form-label">Message:</label>
+												<textarea class="form-control" id="message-text"></textarea>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-warning">Send message</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<img src="../img/home_showcase.svg" alt="showcase" class="img-fluid w-50 d-none d-lg-block">
 				</div>
@@ -79,7 +106,25 @@
 				<!-- Header -->
 				<div class="d-flex justify-content-between align-items-center pt-0 pt-md-5">
 					<h3>Latest Posts</h3>
-					<button type="button" class="btn btn-me">View all</button>
+					<button type="button" class="btn btn-me" data-bs-toggle="modal" data-bs-target="#exampleModal1">View all</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal1" tabindex="-1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h1 class="modal-title fs-5" id="exampleModalLabel">Sorry, For The Inconvenience</h1>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									This page is under maintenance right now.
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<!-- Posts-->
@@ -87,61 +132,61 @@
 					<table class="table">
 						<tbody>
 							<tr>
-								<td colspan="3" class="col-align-1">
+								<td class="col-align-1">
 									<a href="#" class="blog-link">Statistical Analysis of Bike Share Usage Trends</a>
 								</td>
 								<td class="col-align-2 d-none d-lg-block">August 20, 2023</td>
 							</tr>
 							<tr>
-								<td colspan="3" class="col-align-1">
+								<td class="col-align-1">
 									<a href="#" class="blog-link">Data Visualization Best Practices for Audience Impact</a>
 								</td>
 								<td class="col-align-2 d-none d-lg-block">August 11, 2023</td>
 							</tr>
 							<tr>
-								<td colspan="3" class="col-align-1">
+								<td class="col-align-1">
 									<a href="#" class="blog-link">An Intro to SQL for Aspiring Data Analysts</a>
 								</td>
 								<td class="col-align-2 d-none d-lg-block">August 3, 2023</td>
 							</tr>
 							<tr>
-								<td colspan="3" class="col-align-1">
+								<td class="col-align-1">
 									<a href="#" class="blog-link">5 Excel PivotTable Tips Every Data Analyst Should Know</a>
 								</td>
 								<td class="col-align-2 d-none d-lg-block">July 15, 2023</td>
 							</tr>
 							<tr>
-								<td colspan="3" class="col-align-1">
+								<td class="col-align-1">
 									<a href="#" class="blog-link">Navigating the Data Ocean: Strategies for Efficient Data Collection and Analysis</a>
 								</td>
 								<td class="col-align-2 d-none d-lg-block">June 29, 2023</td>
 							</tr>
 							<tr>
-								<td colspan="3" class="col-align-1">
+								<td class="col-align-1">
 									<a href="#" class="blog-link">From Raw Data to Actionable Insights: A Deep Dive into Data Preprocessing</a>
 								</td>
 								<td class="col-align-2 d-none d-lg-block">May 17, 2023</td>
 							</tr>
 							<tr>
-								<td colspan="3" class="col-align-1">
+								<td class="col-align-1">
 									<a href="#" class="blog-link">Mastering the Art of Data Visualization: Creating Impactful Charts and Graphs</a>
 								</td>
 								<td class="col-align-2 d-none d-lg-block">April 22, 2023</td>
 							</tr>
 							<tr>
-								<td colspan="3" class="col-align-1">
+								<td class="col-align-1">
 									<a href="#" class="blog-link">Predictive Analytics Demystified: Building Accurate Models for Future Trends</a>
 								</td>
 								<td class="col-align-2 d-none d-lg-block">March 5, 2023</td>
 							</tr>
 							<tr>
-								<td colspan="3" class="col-align-1">
+								<td class="col-align-1">
 									<a href="#" class="blog-link">Real-World Data Challenges: Case Studies in Cleaning and Transforming Messy Data</a>
 								</td>
 								<td class="col-align-2 d-none d-lg-block">February 15, 2023</td>
 							</tr>
 							<tr>
-								<td colspan="3" class="col-align-1">
+								<td class="col-align-1">
 									<a href="#" class="blog-link">Insights from Social Media Data: Analyzing Trends and Customer Sentiments</a>
 								</td>
 								<td class="col-align-2 d-none d-lg-block">January 10, 2023</td>
@@ -275,11 +320,26 @@
 				<div class="d-md-flex justify-content-between align-items-center">
 					<div>
 						<h3 class="head-news"><span class="text-news">News</span>Letter</h3>
-						<h5><p class="p-text">Sign Up For Subscribe</p></h5>
+						<h5 class="p-text">Sign Up For Subscribe</h5>
 					</div>
 					<div class="input-group mb-3 form">
 						<input type="text" class="form-control" placeholder="Enter Your Email">
-						<span class="input-group-text btn btn-dark">Subscribe</span>
+						<span class="input-group-text btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">Subscribe</span>
+
+						<div class="modal fade" id="exampleModal2" tabindex="-1">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5" id="exampleModalLabel">Thanks For Your Subcription.</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									
+									<div class="modal-footer">
+										<button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -289,10 +349,10 @@
 	<!-- Footer -->
 	<footer>
 		<div class="container">
-			<footer class="py-3 my-4">
+			<div class="py-3 my-4">
 				<p class="text-center">Design Was Inspired From <a href="https://www.taniarascia.com/" class="nav-link" style="display: inline;">Tania Rascia</a></p>
 				<p class="text-center">&copy; 2023, All right reserved by Saif Siddique</p>
-			</footer>
+			</div>
 		</div>
 	</footer>
 
