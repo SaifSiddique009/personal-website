@@ -69,3 +69,21 @@ nav {
 .active-page:hover {
     color: #ff8307;
 }
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 20px;
+    background-color: #fdd08c;
+    color: var(--link-color);
+    box-shadow: 0 0.1px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px 50px 10px;
+    border-radius: 5px;
+    z-index: 10000;
+  }
+
+.alert-header {
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+}

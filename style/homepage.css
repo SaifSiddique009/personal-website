@@ -110,6 +110,10 @@
     background-color: #212529;
 }
 
+.btn-about:active {
+    background-color: #212529 !important;
+}
+
 .img-about {
     width: 32%;
     height: auto;

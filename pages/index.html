@@ -322,25 +322,47 @@
 						<h3 class="head-news"><span class="text-news">News</span>Letter</h3>
 						<h5 class="p-text">Sign Up For Subscribe</h5>
 					</div>
-					<div class="input-group mb-3 form">
-						<input type="text" class="form-control" placeholder="Enter Your Email">
-						<span class="input-group-text btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">Subscribe</span>
 
-						<div class="modal fade" id="exampleModal2" tabindex="-1">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="exampleModalLabel">Thanks For Your Subcription.</h1>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-									</div>
-									
-									<div class="modal-footer">
-										<button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					<!-- Subscription Form -->
+					<form class="input-group mb-3 form">
+						<input type="email" id="email-input" class="form-control" placeholder="Enter Your Email" autocomplete="off">
+						<button type="button" id="subscribe-button" class="input-group-text btn btn-dark">Subscribe</button>
+          </form>
+            
+          <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="successModalLabel">Congratulations!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Thank you for subscribing!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal fade" id="invalidModal" tabindex="-1" aria-labelledby="invalidModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="invalidModalLabel">Invalid Email</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  The email you provided is not valid. Please enter a valid email address.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
 				</div>
 			</div>
 		</section>
