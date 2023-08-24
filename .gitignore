@@ -2,3 +2,6 @@ bootstrap-5.2.3-examples/
 copy.*
 .vscode
 homePage.code-workspace
+pages/
+style/
+
